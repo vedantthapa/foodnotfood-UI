@@ -1,8 +1,10 @@
+const ort = require("onnxruntime-web");
+
 async function run() {
   try {
     // create a new session and load the AlexNet model.
     const session = await ort.InferenceSession.create(
-      "./src/assets/efficientnet-B0-v1.onnx"
+      "./src/assets/model/efficientnet-B0-v1.onnx"
     );
 
     // prepare dummy input data
