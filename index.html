@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html>
   <header>
-    <title>ONNX Runtime Web Tutorial</title>
+    <title>ONNX Runtime Web Image Classifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./src/css/main.css">
+
   </header>
   <body>
-     <!-- file input -->
-    <label for="fileIn"><h2>What am I?</h2></label>
-    <input type="file" id="file-in" name="file-in">
-    <!-- image displays -->
-    <img id="input-image" class="input-image"></img>
-    <img id="scaled-image" class="scaled-image"></img>
-    <!-- classification target -->
-    <h3 id="target"></h3>
+    <div>
+      <div>
+        <div>
+          <label for="fileIn"><h2>What am I 🤨⁉️</h2></label>
+          <br/>
+          <br/>
+          <input type="file" id="file-in" name="file-in">
+        </div>
+      </div>
+
+      <hr></hr>
+      <div>
+        <div>
+          <h4 class="text-center">Original</h4>
+          <img id="input-image" alt="Input image"></img>
+        </div>
+        <div>
+          <h4 class="text-center">Canvas scaled</h4>
+          <img id="canvas-image" alt="Input image"></img>
+        </div>
+        <div id="target"></div>
+      </div>
+    </div>
     
     <script src="./dist/bundle.min.js"></script>
   </body>
 </html>
-
