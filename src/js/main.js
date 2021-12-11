@@ -107,7 +107,7 @@ function argMax(arr) {
 async function run(inputTensor) {
   try {
     const session = await ort.InferenceSession.create(
-      "./src/assets/model/efficientnet-B0-v1.onnx"
+      "./src/assets/model/efficientnet-B0-v2.onnx"
     );
     const feeds = { input: inputTensor };
 
