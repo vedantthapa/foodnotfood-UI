@@ -35,7 +35,7 @@ window.setInterval(function () {
   if (isRunning) {
     target.innerHTML = `<div><img src="src/assets/images/loading.gif" class="loading" height="30" width="30"/>`;
   } else if (predictedClass !== "undefined 😵‍💫") {
-    target.innerHTML = `<h3>${predictedClass}!`;
+    target.innerHTML = `<h3>${predictedClass}!</h3>`;
   } else {
     target.innerHTML = ``;
   }
