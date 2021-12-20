@@ -9,7 +9,7 @@ const MAX_LENGTH = DIMS[0] * DIMS[1] * DIMS[2] * DIMS[3];
 const MAX_SIGNED_VALUE = 255.0;
 const classes = require("./classes.json").data;
 
-let predictedClass;
+let predictedClass = "⏳😵‍💫";
 let isRunning = false;
 
 // DOM elements
@@ -34,8 +34,8 @@ const target = document.getElementById("target");
 window.setInterval(function () {
   if (isRunning) {
     target.innerHTML = `<div><img src="src/assets/images/loading.gif" class="loading" height="30" width="30"/>`;
-  } else if (predictedClass !== "undefined 😵‍💫") {
-    target.innerHTML = `<h3>${predictedClass}!</h3>`;
+  } else if (predictedClass !== "undefined") {
+    target.innerHTML = `<h1>${predictedClass}</h1>`;
   } else {
     target.innerHTML = ``;
   }
